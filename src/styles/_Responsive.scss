@@ -1,0 +1,49 @@
+@media (max-width: 430px) and (min-width: 314px) {
+  html {
+    font-size: 4px;
+  }
+  .navbar {
+    box-shadow: 0rem 0rem 3rem 0rem #d1d1d1;
+    height: 17rem;
+    a {
+      h1 {
+        font-size: 8rem;
+      }
+    }
+    .navlists {
+      display: none;
+    }
+    .navlists.active {
+      display: block;
+      position: absolute;
+      .lists {
+        display: flex;
+        flex-direction: column;
+        font-size: 7rem;
+        position: relative;
+        top: 113.5rem;
+        background: white;
+        width: 100vw;
+        height: 91vh;
+        justify-content: center;
+        li a svg{
+          font-size: 13.5rem;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .nline:nth-child(1) {
+    transform: translateY(3.1rem) rotate(45deg);
+  }
+  .hamburger.active .nline:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .nline:nth-child(3) {
+    transform: translateY(-1.6rem) rotate(-45deg);
+    width: 9rem;
+  }
+}
