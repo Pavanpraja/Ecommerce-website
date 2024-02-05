@@ -300,7 +300,7 @@ html {
 }
 
 // footer section custom
-.layer-design{
+.layer-design {
   width: 37rem;
   height: 10rem;
   margin-bottom: -2rem;
@@ -322,13 +322,14 @@ html {
     gap: 1rem;
     .fooicons img {
       filter: invert(1);
+      cursor: pointer;
       &:hover {
         filter: contrast(0.1);
       }
     }
   }
 }
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,6 +337,105 @@ footer{
   background: #000000ba;
   font-weight: 600;
   color: white;
+}
+
+//Errorpage design
+
+.error-texts {
+  @include flexItem();
+  position: relative;
+  top: 7rem;
+  flex-direction: column;
+  height: 42rem;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  h1 {
+    font-size: 16rem;
+    text-shadow: 0.4rem 0.4rem 0.5rem #000000;
+    opacity: 0.9;
+  }
+  h2 {
+    text-shadow: 0.2rem 0.2rem 0.2rem #000000;
+  }
+  p {
+    text-shadow: 0.1rem 0.1rem 0.2rem #000000;
+    font-weight: 600;
+  }
+  .err-buttons {
+    button {
+      padding: 1rem;
+      border-radius: 1rem;
+      outline: 0;
+      border: 0;
+      cursor: pointer;
+      background: #00000054;
+      color: white;
+      font-weight: 600;
+      font-size: 1.7rem;
+      transition: 0.3s;
+      margin-top: 1rem;
+      &:hover {
+        background: rgb(127, 255, 212);
+        color: black;
+      }
+    }
+  }
+}
+
+// loadingpage
+.l-center{
+  h1{
+    font-size: 12rem;
+    text-align: center;
+  }
+}
+
+//feture services
+
+.pro_data_con{
+  background: #8080800d;
+  padding: 1rem 0rem 5rem 0rem;
+  .exp_con {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 32rem;
+    margin-top: 9rem;
+    h3 {
+      font-size: 2rem;
+    }
+    .fpro-heading {
+      h2 {
+        font-size: 3.5rem;
+      }
+      .prod_items {
+        display: flex;
+        gap: 11rem;
+        margin-top: 2rem;
+        .pro_card {
+          figure {
+            img {
+              width: 24rem;
+              border-radius: 1rem;
+              box-shadow: 0rem 0rem 1rem 0rem #afafaf;
+              &:hover {
+                box-shadow: 0rem 0rem 1rem 0rem;
+              }
+            }
+          }
+          .pcard-d-flex {
+            display: flex;
+            align-items: center;
+            gap: 11rem;
+            font-size: 1.5rem;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        }
+      }
+    }
+  }
 }
 
 

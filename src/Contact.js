@@ -1,23 +1,20 @@
 import React from "react";
-import './styles/App.css'
-import Header from "./components/Header";
-import 'react-dom';
+import "./styles/App.css";
+import "react-dom";
 function Contact() {
-
   return (
     <>
-      <Header />
       <section id="contact">
         <h1 className="h-primari1 center1">Contact Us</h1>
         <div id="contact-box">
-          <form action="message.html" onsubmit="return validation()">
+          <form action="message.html">
             <div className="form-group">
               <input
                 type="text"
                 name="name"
                 id="name"
                 placeholder="Username"
-                autocomplete="off"
+                autoComplete="off"
                 required
               />
               <span
@@ -31,7 +28,7 @@ function Contact() {
                 name="email"
                 id="email"
                 placeholder="Email"
-                autocomplete="off"
+                autoComplete="off"
                 required
               />
               <span
@@ -45,7 +42,7 @@ function Contact() {
                 name="Phone"
                 id="Phone"
                 placeholder="Phone-number"
-                autocomplete="off"
+                autoComplete="off"
                 required
               />
               <span
@@ -59,7 +56,7 @@ function Contact() {
                 name="Phonec"
                 id="Phonec"
                 placeholder="Confirm-Phone-number"
-                autocomplete="off"
+                autoComplete="off"
                 required
               />
               <span
@@ -75,7 +72,7 @@ function Contact() {
                 cols="30"
                 rows="10"
                 placeholder="About yourself..."
-                autocomplete="off"
+                autoComplete="off"
                 required
               ></textarea>
               <span
@@ -84,7 +81,7 @@ function Contact() {
               ></span>
             </div>
             <div className="submit-btn0">
-              <button type="submit" autocomplete="off">
+              <button type="submit" autoComplete="off">
                 Submit
               </button>
             </div>

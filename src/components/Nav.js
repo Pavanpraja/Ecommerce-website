@@ -1,16 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { TfiShoppingCart } from "react-icons/tfi";
+import { CiDark } from "react-icons/ci";
 import "react-dom";
 import "../styles/App.css";
 
 function Nav() {
+
   function Openlists() {
     const a = document.querySelector(".hamburger");
     const b = document.querySelector(".navlists");
     a.classList.toggle("active");
     b.classList.toggle("active");
   }
+
   return (
     <>
       <div className="navlists">
@@ -39,6 +42,9 @@ function Nav() {
             </NavLink>
             <div className="linkanima02"></div>
           </li>
+          <div className="dark-icon">
+            <CiDark />
+          </div>
           <li>
             <NavLink to="/cart" className="nav-cartico">
               <TfiShoppingCart />
@@ -57,3 +63,4 @@ function Nav() {
 }
 
 export default Nav;
+

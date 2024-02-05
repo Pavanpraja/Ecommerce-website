@@ -1,9 +1,10 @@
 import React from 'react'
+import Error from './components/Error'
 
 function ErrorPage() {
   return (
     <div>
-      This is error
+      <Error />
     </div>
   )
 }

@@ -311,6 +311,7 @@ html {
 }
 .foo-head .foo-about .fooicons img {
   filter: invert(1);
+  cursor: pointer;
 }
 .foo-head .foo-about .fooicons img:hover {
   filter: contrast(0.1);
@@ -324,6 +325,91 @@ footer {
   background: rgba(0, 0, 0, 0.7294117647);
   font-weight: 600;
   color: white;
+}
+
+.error-texts {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 7rem;
+  flex-direction: column;
+  height: 42rem;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+.error-texts h1 {
+  font-size: 16rem;
+  text-shadow: 0.4rem 0.4rem 0.5rem #000000;
+  opacity: 0.9;
+}
+.error-texts h2 {
+  text-shadow: 0.2rem 0.2rem 0.2rem #000000;
+}
+.error-texts p {
+  text-shadow: 0.1rem 0.1rem 0.2rem #000000;
+  font-weight: 600;
+}
+.error-texts .err-buttons button {
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3294117647);
+  color: white;
+  font-weight: 600;
+  font-size: 1.7rem;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+.error-texts .err-buttons button:hover {
+  background: rgb(127, 255, 212);
+  color: black;
+}
+
+.l-center h1 {
+  font-size: 12rem;
+  text-align: center;
+}
+
+.pro_data_con {
+  background: rgba(128, 128, 128, 0.0509803922);
+  padding: 1rem 0rem 5rem 0rem;
+}
+.pro_data_con .exp_con {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 32rem;
+  margin-top: 9rem;
+}
+.pro_data_con .exp_con h3 {
+  font-size: 2rem;
+}
+.pro_data_con .exp_con .fpro-heading h2 {
+  font-size: 3.5rem;
+}
+.pro_data_con .exp_con .fpro-heading .prod_items {
+  display: flex;
+  gap: 11rem;
+  margin-top: 2rem;
+}
+.pro_data_con .exp_con .fpro-heading .prod_items .pro_card figure img {
+  width: 24rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 1rem 0rem #afafaf;
+}
+.pro_data_con .exp_con .fpro-heading .prod_items .pro_card figure img:hover {
+  box-shadow: 0rem 0rem 1rem 0rem;
+}
+.pro_data_con .exp_con .fpro-heading .prod_items .pro_card .pcard-d-flex {
+  display: flex;
+  align-items: center;
+  gap: 11rem;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 @media (max-width: 430px) and (min-width: 314px) {
