@@ -38,6 +38,7 @@ html {
   gap: 45rem;
   padding: 1rem;
   box-shadow: 0rem 0rem 1rem 0rem #d1d1d1;
+  z-index: 1;
 }
 .navbar a {
   text-decoration: none;
@@ -257,6 +258,7 @@ html {
   height: 48rem;
   gap: 2rem;
   font-size: 2rem;
+  margin-bottom: 18rem;
 }
 
 #contact-box form {
@@ -405,7 +407,7 @@ footer {
 .pro_data_con .exp_con .fpro-heading .prod_items .pro_card .pcard-d-flex {
   display: flex;
   align-items: center;
-  gap: 11rem;
+  gap: 9rem;
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
