@@ -7,7 +7,7 @@ function Header() {
     <>
         <div className="navbar">
             <NavLink to="/">
-                <h1>QuirkCart</h1>
+                <h1 style={{fontSize: "3rem"}}>VerdeVistaShop</h1>
             </NavLink>
             <Nav />
         </div>
